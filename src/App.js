@@ -8,6 +8,7 @@ function App() {
       style={{
         width: "100%",
         display: "flex",
+        marginTop: "2%",
         justifyContent: "center",
         alignItems: "center",
       }}
