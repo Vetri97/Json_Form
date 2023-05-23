@@ -1,0 +1,163 @@
+{
+  "steps": [
+    {
+      "label": "Step 1",
+      "fields": [
+        {
+          "id": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true,
+          "validationRegex": "^(?!\\s*$).+",
+          "validationMessage": "Name cannot be empty"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "validationRegex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$",
+          "validationMessage": "Invalid email format"
+        },
+        {
+          "id": "age",
+          "label": "Age",
+          "type": "number",
+          "required": true,
+          "validationRegex": "^(1[8-9]|[2-5][0-9]|60)$",
+          "validationMessage": "Age should be between 18 and 60"
+        }
+      ]
+    },
+    {
+      "label": "Step 2",
+      "fields": [
+        {
+          "id": "address1",
+          "label": "Address1",
+          "type": "text",
+          "required": true,
+          "validationRegex": "^(?!\\s*$).+",
+          "validationMessage": "Address1 cannot be empty"
+        },
+        {
+          "id": "address2",
+          "label": "Address2",
+          "type": "text",
+          "required": true,
+          "validationRegex": "^(?!\\s*$).+",
+          "validationMessage": "Address2 cannot be empty"
+        },
+        {
+          "id": "city",
+          "label": "City",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "option1",
+              "label": "Option 1"
+            },
+            {
+              "value": "option2",
+              "label": "Option 2"
+            },
+            {
+              "value": "option3",
+              "label": "Option 3"
+            }
+          ]
+        },
+        {
+          "id": "state",
+          "label": "State",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "option1",
+              "label": "Option 1"
+            },
+            {
+              "value": "option2",
+              "label": "Option 2"
+            },
+            {
+              "value": "option3",
+              "label": "Option 3"
+            }
+          ]
+        },
+        {
+          "id": "country",
+          "label": "Country",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "option1",
+              "label": "Option 1"
+            },
+            {
+              "value": "option2",
+              "label": "Option 2"
+            },
+            {
+              "value": "option3",
+              "label": "Option 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Step 3",
+      "fields": [
+        {
+          "id": "gender",
+          "label": "Gender",
+          "type": "radio",
+          "required": true,
+          "options": [
+            {
+              "value": "male",
+              "label": "Male"
+            },
+            {
+              "value": "female",
+              "label": "Female"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ]
+        },
+        {
+          "id": "maritalStatus",
+          "label": "Marital Status",
+          "type": "checkbox",
+          "required": true,
+          "options": [
+            {
+              "value": "single",
+              "label": "Single"
+            },
+            {
+              "value": "married",
+              "label": "Married"
+            },
+            {
+              "value": "divorced",
+              "label": "Divorced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Step 4",
+      "fields": []
+    }
+  ]
+}
